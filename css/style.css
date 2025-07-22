@@ -64,7 +64,7 @@ nav{
  .hero-area {
   background-image: url('../images/Circle\ design.svg');
   background-repeat: no-repeat;
-  background-position: left 800px top 70px;
+  background-position: right bottom;
   padding: 80px 0;
   background-image: cover;
    
@@ -102,6 +102,8 @@ nav{
  .sponsord-area{
    max-width: 1110px;
    padding: 50px 0px;
+   margin: 0 auto;
+
   
  }
  .sponsor-brand{
@@ -109,10 +111,101 @@ nav{
    grid-template-columns: repeat(7, 1fr);
    align-items: center;
    gap: 60px;
-   border: 1px solid #3A3A3A;
+   /* border: 1px solid #3A3A3A; */
    padding: 30px;
-  
-   
-   
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+ }
+
+
+/* collection-title css */
+.collection{
+
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.collection-title{
+   text-align: center;
+   font-size: 1.7rem;
+   margin-bottom: 30px;
+}
+ .collection-section-card{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+ }
+
+ .card-content{
+   padding: 17px 15px;
+   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+   border-radius: 10px;
+ }
+
+ .card-content h3{
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+  margin-top: 16px;
+
+ }
+ .card-content span{
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+ }
+ .card-content i{
+  color: orange;
+  margin-bottom: 10px;
+ }
+ .rating{
+  display: inline-block;
+ color: #3A3A3A;
+ }
+/* .see-more{
+  grid-template-columns: 1fr;
+} */
+
+ /* featured area css */
+ .featured-area{
+  /* justify-content: space-between; */
+  align-items: center;
+  max-width: 1110px;
+  margin: 100px auto;
+  gap: 100px;
  }
  
+
+ .featured-content h3{
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 16px;
+ }
+ .featured-content p{
+  margin-bottom: 16px;
+ }
+.featured-content button{
+  border-radius: 5px;
+}
+ /* footer css */
+ .footer{
+  background-color: black;
+  color: white;
+  padding: 100px 0px;
+  
+ }
+ .footer-content{
+  max-width: 265px;
+  margin: 0 auto;
+  text-align: center;
+ }
+ .footer-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+ }
+ .footer-content p{
+  line-height: 20px;
+
+ }
+ .footer-content i{
+  padding: 20px 10px;
+ }
