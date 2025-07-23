@@ -61,13 +61,15 @@ nav{
  }
 
  /* hero area css */
- .hero-area {
+ .hero-image img{
   background-image: url('../images/Circle\ design.svg');
   background-repeat: no-repeat;
-  background-position: right bottom;
-  padding: 80px 0;
+  background-position: right;
+  padding-bottom: 80px ;
   background-image: cover;
-   
+  /* width: 100%; */
+  background-size: 400px;
+  
 
  }
 
@@ -160,9 +162,9 @@ nav{
   display: inline-block;
  color: #3A3A3A;
  }
-/* .see-more{
-  grid-template-columns: 1fr;
-} */
+.see-more{
+ text-align: end;
+}
 
  /* featured area css */
  .featured-area{
@@ -175,7 +177,7 @@ nav{
  
 
  .featured-content h3{
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   line-height: 60px;
   margin-bottom: 16px;
@@ -185,6 +187,15 @@ nav{
  }
 .featured-content button{
   border-radius: 5px;
+}
+
+.featured-area img{
+  max-width: 500px;
+}
+
+.see-more{
+  color: red;
+  margin-top: 50px;
 }
  /* footer css */
  .footer{
@@ -208,4 +219,60 @@ nav{
  }
  .footer-content i{
   padding: 20px 10px;
+ }
+
+
+
+ @media screen and (max-width: 676px) {
+  nav,
+  .hero-area,
+  .featured-area{
+    flex-direction: column;
+    text-align: center;
+   
+  }
+   .hero-area{
+    background-image: none;
+    
+    
+   }
+   .hero-image img{
+    padding: 0px;
+   }
+   
+   .hero-content{
+    margin-bottom: 70px;
+   }
+  .collection-section-card{
+    grid-template-columns: 1fr;
+  }
+  .sponsor-brand{
+   grid-template-columns: 1fr;
+ }
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  nav,.hero-area,.featured-area{
+    flex-direction: column;
+    align-items: center;
+    /* background-image: none; */
+  }
+  .hero-content{
+    margin-bottom: 70px;
+   }
+.collection-section-card{
+  grid-template-columns: 1fr;
+}
+
+.sponsor-brand{
+   grid-template-columns: 1fr;
+  align-items: center;
+ 
+  }
+   .sponsor-brand img{
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+   }
+   
  }
